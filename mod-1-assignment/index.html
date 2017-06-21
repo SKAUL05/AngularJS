@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ASSIGNMENT--1</title>
+		<script src="angular.min.js"></script>
+		<script src="app.js"></script>
+	</head>	
+	<body ng-app="LunchCheck">
+		<h1>Coursera AngularJS Assignment----1</h1>
+        <div ng-controller="LunchCheckController">
+		Enter Items:&nbsp;<input type="text" ng-model="name" style="border-color:{{colors}}">&nbsp;
+		<button ng-click="checkit()">Check If Too Much</button>
+		<h3 style="color:{{colors}}">{{answer}}</h3>
+		</div>
+	</body>
+</html>
