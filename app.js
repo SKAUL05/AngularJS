@@ -3,8 +3,12 @@
 
 angular.module('myFirstApp', [])
 
-.controller('MyFirstcontroller', function ($scope) {
+.controller('MyFirstcontroller', function ($scope,$filter) {
 $scope.name = "SARATH";
+$scope.upper=function(){
+var up=$filter('uppercase');
+$scope.name=up($scope.name);	
+};
 
 })
 
