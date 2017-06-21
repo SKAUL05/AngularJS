@@ -1,8 +1,21 @@
-<html>
+<html ng-app="myFirstApp">
 <head>
 <title>AngularJS</title>
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
 </head>
 <body>
-<h1> Starting AngularJS!!!</h1>
+<h1>My First AngularJS App!!! </h1>
+<div ng-controller="MyFirstcontroller">
+Hiiii<br>
+<input typt="text" ng-model="name"><br>
+Output is:{{name}}
+</div>
+<div ng-controller="NameCalculator">
+<h2>Name Calculator</h2>
+</p>Your Name:</p>
+<input type="text" ng-model="texts" ng-keyup="display();"><br>
+</p>Text Conversion is:{{totalvalue}}</p>
+</div>
 </body>
 </html>
