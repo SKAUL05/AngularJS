@@ -29,6 +29,22 @@ $scope.name=up($scope.name);
 		}
 		return totalstringvalue;
 	}
+})
+
+.controller('DigestCycle',function($scope,$timeout){
+	$scope.oncecounter= 0;
+	$scope.counter= 0;
+	$scope.upOnce=function(){
+		$scope.oncecounter=1;
+	};
+	$scope.Counter=function(){
+		$timeout(function(){
+			$scope.counter++;
+			console.log("Counter Incremented!!!");
+		},2000);
+	};
+	
+	
 });
 
 })();

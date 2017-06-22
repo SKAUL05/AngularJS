@@ -17,5 +17,11 @@ Output is:{{name}}
 <input type="text" ng-model="texts" ng-keyup="display();"><br>
 </p>Text Conversion is:{{totalvalue}}</p>
 </div>
+<div ng-controller="DigestCycle">
+<button ng-click="upOnce();">Once Click</button>
+<button ng-click="Counter();">Counter</button>
+<p>{{oncecounter}}</p>
+<p>{{counter}}</p>
+</div>
 </body>
 </html>
